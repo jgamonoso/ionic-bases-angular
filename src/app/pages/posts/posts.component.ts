@@ -17,4 +17,9 @@ export class PostsComponent implements OnInit {
   ngOnInit(): void {
    this.mensajes = this.dataService.getPosts();
   }
+
+  escuchaClick( id: number ) {
+    console.log( 'Llega al padre:', id )
+
+  }
 }
